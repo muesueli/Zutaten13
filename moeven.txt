@@ -1,0 +1,81 @@
+RÜST-UND VERLUST-TABELLE
+
+
+Gemüse und Salate
+
+Auberginen gerüstet mit Schale, gewaschen
+Austernsaitlinge geputzt
+Bambussprossen (Ds.), abgetropft
+Bohnen fein, gerüstet
+Broccoli gerüstet, in kleinen Röschen
+Champignons frisch, geputzt
+Chicon:e rot, geputzt
+Eichblattsalat gerüstet
+Endivien Brüsseler geputzt
+Endivien frisee geputzt
+}ienchel gerüstet
+Friseesalat gerüstet
+Gurken geschält, ohne Kerne
+Icebergsalat gerüstet
+Karotten geschält
+Knoblauchzehen geschält
+Kopfsalat gerüstet
+Kürbis geschält, entkernt
+Lattughino gerüstet
+Lauch gerüstet
+Lollosalat gerüstet
+Nüsslisalat gerüstet
+Peperoni gelb und rot, ohne Kerne
+Pfifferlinge frisch, gerüstet
+Schalotten geschält
+Schwarzwurzeln geschält
+Sellerie (Knollen-) geschält
+Spinat (Blatt-) gerüstet
+Spinatblätter ohne Stiel
+Steinpilzefrisch, geputzt
+Tomaten geschält, ohne Kerne
+Weisskraut gerüstet
+
+Zucchetti gerüstet, mit Schale
+
+Zwiebeln geschält
+
+Verlust Multiplikator
+5% 1,05
+5% 1,05
+30% 1,43
+10% 1,11
+50% 2,0
+3% 1,03
+25% 1,33
+5% 1,05
+10% 1,11
+35% 1,54
+25% 1,33
+25% 1,33
+40% 1,67
+12% 1,14
+12% 1,14
+15% 1,18
+20% 1,25
+32% 1,47
+10% 1,11
+25% 1,33
+10% 1,11
+5% 1,05
+22% 1,28
+5% 1,05
+10% 1,11
+15% 1,18
+20% 1,25
+5% 1,05
+5% 1,05
+5% 1,05
+40% 1,67
+20% 1,25
+5% 1,05
+10% 1,11
+
+226
+
+

@@ -1,0 +1,648 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="6dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.hu.zutaten13.Op_Detail"
+    tools:ignore="RtlHardcoded">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:id="@+id/detailSv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:background="@color/colorSecondary"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/gruppeEt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Gruppe"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:textCursorDrawable="@null"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/bezEt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:hint="Ware"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/zusatzEt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Detail"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:textCursorDrawable="@null"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/mehrHeaderSw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="&#8942;"
+                        android:textOff="weniger"
+                        android:textOn="mehr"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rechnen0Ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/rechnenBt"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:text="Rechnen" />
+
+                    <EditText
+                        android:id="@+id/personenEt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:background="@color/grau_primary_light"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:text="4"
+                        android:textCursorDrawable="@null" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:text="Personen"
+                        android:typeface="sans" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rechnenLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/portionEt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:background="@color/grau_primary_light"
+                        android:hint="0"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:minWidth="12dp"
+                        android:padding="12dp"
+                        android:textCursorDrawable="@null" />
+
+                    <Spinner
+                        android:id="@+id/portionMassSp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:entries="@array/portionensolidmasse" />
+
+                    <Spinner
+                        android:id="@+id/stufeSp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:entries="@array/stufen" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorSecondary"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewb10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="Daten"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/mehrDataSw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="&#8942;"
+                        android:textOff="weniger"
+                        android:textOn="mehr"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:id="@+id/datenTl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:text="Verluste %"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:text="Rüsten"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:text="Kochen"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:text="Abgang"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:typeface="sans" />
+
+                        <Space
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:text="Backen °C"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="bold"
+                            android:typeface="sans"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/temperaturBackenEt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:background="@color/grau_primary_light"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:minWidth="12dp"
+                            android:textCursorDrawable="@null"
+                            android:visibility="gone" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Space
+                            android:layout_width="18dp"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/verlustRuestenEt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:background="@color/grau_primary_light"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:textCursorDrawable="@null" />
+
+                        <EditText
+                            android:id="@+id/verlustKochenEt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:background="@color/grau_primary_light"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:textCursorDrawable="@null" />
+
+                        <EditText
+                            android:id="@+id/verlustAbgangEt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:background="@color/grau_primary_light"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:textCursorDrawable="@null" />
+
+                        <Space
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:text="Kern °C"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="bold"
+                            android:typeface="sans"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/temperaturKernEt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:background="@color/grau_primary_light"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:minWidth="12dp"
+                            android:textCursorDrawable="@null"
+                            android:visibility="gone" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Space
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content" />
+
+                        <Space
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content" />
+
+                        <Space
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content" />
+
+                        <Space
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content" />
+
+                        <Space
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/kochzeitTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:text="Min. Kochen "
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="bold"
+                            android:typeface="sans"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/kochzeitEt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:background="@color/grau_primary_light"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:minWidth="12dp"
+                            android:textCursorDrawable="@null"
+                            android:visibility="gone" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <LinearLayout
+                    android:id="@+id/dichteLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:text="Dichte"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <EditText
+                        android:id="@+id/dichteMengeEt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:background="@color/grau_primary_light"
+                        android:hint="0"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|numberDecimal"
+                        android:minWidth="12dp"
+                        android:padding="12dp" />
+
+                    <Spinner
+                        android:id="@+id/dichteMengeMassSp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:text="pro"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:typeface="sans" />
+
+                    <Spinner
+                        android:id="@+id/dichteProMassSp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorSecondary"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView78"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:text="Notizen "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <!--
+                    <Button
+                        android:id="@+id/pasteBt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="12dp"
+                        android:text="Einfügen" />
+    -->
+
+                    <Switch
+                        android:id="@+id/linksSw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="18dp"
+                        android:text="Links"
+                        android:textOff="nein"
+                        android:textOn="ja" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/wenigerNotizenSw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="&#8942;"
+                        android:textOff="weniger"
+                        android:textOn="mehr"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/notizenEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:autoLink="web"
+                    android:background="@color/divider"
+                    android:hint="Tippen oder Einfügen von Zwischenablage"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="10sp"
+                    android:textColor="@android:color/black"
+                    android:textColorLink="@color/link"
+                    android:textCursorDrawable="@null" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorSecondary"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/hilfsstoffBezEt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:hint="Hilfsstoff"
+                        android:imeOptions="actionDone"
+                        android:inputType="text" />
+
+                    <Button
+                        android:id="@+id/hilfsstoffAddBt"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/ic_add_circle_black_18dp"
+                        android:maxWidth="36dp"
+                        android:minHeight="36dp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/mehrHilfsstoffSw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="&#8942;"
+                        android:textOff="weniger"
+                        android:textOn="mehr"
+                        android:textSize="24sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hilfsstoffLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/hilfsstoffMengeEt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:background="@color/grau_primary_light"
+                        android:hint="0"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:minWidth="12dp"
+                        android:padding="12dp"
+                        android:textCursorDrawable="@null" />
+
+                    <Spinner
+                        android:id="@+id/hilfsstoffMassSp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:text="für"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:typeface="sans" />
+
+                    <EditText
+                        android:id="@+id/hilfsstoffProMengeEt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:background="@color/grau_primary_light"
+                        android:hint="0"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:minWidth="12dp"
+                        android:padding="12dp"
+                        android:text="1"
+                        android:textCursorDrawable="@null" />
+
+                    <Spinner
+                        android:id="@+id/hilfsstoffProSp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:entries="@array/hilfsstoffmasse" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hilfsstoffTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:background="@color/divider"
+                    android:lineSpacingExtra="10sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+</LinearLayout>

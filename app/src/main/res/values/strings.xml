@@ -1,0 +1,82 @@
+<resources>
+
+    <string name="app_name">Meine Kochnotizen</string>
+    <string name="edit">ändern</string>
+    <string name="back">zurück</string>
+    <string name="share">teilen</string>
+
+    <string-array name="stufen">
+        <item>roh</item>
+        <item>geruestet</item>
+        <item>gekocht</item>
+        <item>- Abgang</item>
+    </string-array>
+
+    <string-array name="portionensolidmasse">
+        <item>g</item>
+        <item>kg</item>
+        <item>Stk</item>
+    </string-array>
+
+    <string-array name="gewichtmasse">
+        <item>g</item>
+        <item>kg</item>
+    </string-array>
+
+    <string-array name="volumenmasse">
+        <item>ml</item>
+        <item>cm3</item>
+        <item>KL</item>
+        <item>EL</item>
+        <item>dl</item>
+        <item>Ta</item>
+        <item>l</item>
+    </string-array>
+
+    <string-array name="hilfsstoffProSolid">
+        <item>g</item>
+        <item>kg</item>
+        <item>Portion</item>
+        <item>Essen</item>
+    </string-array>
+
+    <string-array name="hilfsstoffProLiquid">
+        <item>ml</item>
+        <item>dl</item>
+        <item>l</item>
+        <item>Portion</item>
+        <item>Essen</item>
+    </string-array>
+
+    <string-array name="hilfsstoffMasse">
+        <item>g</item>
+        <item>kg</item>
+        <item>ml</item>
+        <item>KL</item>
+        <item>EL</item>
+        <item>dl</item>
+        <item>Ta</item>
+        <item>l</item>
+        <item>Stk</item>
+    </string-array>
+
+    <string-array name="laengenmasse">
+        <item>mm</item>
+        <item>cm</item>
+        <item>dm</item>
+        <item>m</item>
+    </string-array>
+
+    <string-array name="hilfsstoffmasse">
+        <item>g</item>
+        <item>kg</item>
+        <item>cm3</item>
+        <item>KL</item>
+        <item>EL</item>
+        <item>dl</item>
+        <item>Ta</item>
+        <item>l</item>
+    </string-array>
+
+</resources>
+

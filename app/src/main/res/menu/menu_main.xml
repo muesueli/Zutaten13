@@ -1,0 +1,57 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="hu.com.verwandte03.MainActivity">
+
+    <item
+        android:id="@+id/neuTop"
+        android:title="Neu"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <item
+                android:id="@+id/neuSolid"
+                android:title="Essware solid"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/neuLiquid"
+                android:title="Essware liquid"
+                app:showAsAction="ifRoom|withText" />
+
+            <item
+                android:id="@+id/neuNotiz"
+                android:title="Notiz"
+                app:showAsAction="ifRoom|withText" />
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/helpTop"
+        android:title="Hilfe"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <item
+                android:id="@+id/hilfe"
+                android:title="Anleitung"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/dichte"
+                android:title="Dichte"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/masseD"
+                android:title="Internationale Masse"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/masseE"
+                android:title="US measures"
+                app:showAsAction="ifRoom|withText" />
+
+            <item
+                android:id="@+id/masseF"
+                android:title="Mesures françaises"
+                app:showAsAction="ifRoom|withText" />
+        </menu>
+    </item>
+
+</menu>

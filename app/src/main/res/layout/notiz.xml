@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="6dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.hu.zutaten13.Op_Detail"
+    tools:ignore="RtlHardcoded">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <TextView
+                android:id="@+id/NtextView6"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="6dp"
+                android:layout_row="1"
+                android:padding="6dp"
+                android:text="Gruppe"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/gruppeNEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="6dp"
+                android:layout_row="1"
+                android:background="@color/grau_primary_light"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:minWidth="24dp"
+                android:padding="6dp"
+                android:text="Notiz" />
+
+            <TextView
+                android:id="@+id/NtextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="6dp"
+                android:layout_row="0"
+                android:padding="6dp"
+                android:text="Titel"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/bezNEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="6dp"
+                android:layout_row="0"
+                android:background="@color/grau_primary_light"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:minWidth="24dp"
+                android:padding="6dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/NtextView5"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="12dp"
+                android:layout_row="2"
+                android:padding="6dp"
+                android:text="Detail"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/zusatzNEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="6dp"
+                android:layout_row="2"
+                android:background="@color/grau_primary_light"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:minWidth="24dp" />
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:orientation="horizontal">
+
+            <!--
+                <Button
+                    android:id="@+id/pasteNBt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@color/colorSecondary"
+                    android:text="Einfügen" />
+-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/linksNSw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="18dp"
+                android:text="Links"
+                android:textOff="nein"
+                android:textOn="ja" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/notizenNEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:autoLink="web"
+            android:background="@color/grau_primary_light"
+            android:hint="Tippen oder Einfügen von Zwischenablage"
+            android:imeOptions="actionDone"
+            android:linksClickable="true"
+            android:minLines="6"
+            android:textColor="@android:color/black"
+            android:textColorLink="@color/link"
+            android:textCursorDrawable="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>
